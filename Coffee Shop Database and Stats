@@ -1,0 +1,46 @@
+/** Coffee:
+Drip
+Latte
+Americano
+Pour Over
+Espresso
+Con Panna
+Hot Chocolate
+Iced coffee
+Iced latte
+Tea
+Iced Tea
+Decaf
+Blended coffee
+Steamer
+Water
+Cold milk
+Juice
+**/
+
+CREATE TABLE Coffee (id INTEGER PRIMARY KEY, name TEXT, price INTEGER );
+
+INSERT INTO Coffee VALUES (1, "Drip", 2.50);
+INSERT INTO Coffee VALUES (2, "Latte", 8);
+INSERT INTO Coffee VALUES (3, "Americano", 5);
+INSERT INTO Coffee VALUES (4, "Pour Over", 3.50);
+INSERT INTO Coffee VALUES (5, "Espresso", 2.50);
+INSERT INTO Coffee VALUES (6, "Con Panna", 4);
+INSERT INTO Coffee VALUES (7, "Hot Chocolate", 3);
+INSERT INTO Coffee VALUES (8, "Iced coffee", 4.50);
+INSERT INTO Coffee VALUES (9, "Iced late", 8);
+INSERT INTO Coffee VALUES (10, "Decaf", 2.50);
+INSERT INTO Coffee VALUES (11, "Blended coffee", 8.50);
+INSERT Into Coffee VALUES (12, "Steamer", 2.50);
+INSERT INTO Coffee VALUES (13, "Water", 0);
+INSERT Into Coffee VALUES (14, "Cold milk", 3);
+INSERT INTO Coffee VALUES (15, "Juice", 3);
+
+SELECT * FROM Coffee;
+SELECT name FROM Coffee;
+SELECT price FROM Coffee ORDER BY price asc;
+SELECT name FROM Coffee ORDER BY name;
+SELECT * FROM Coffee ORDER BY price asc;
+
+SELECT SUM(price) From Coffee;
+SELECT AVG(price) FROM Coffee; 
